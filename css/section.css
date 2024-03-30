@@ -1,0 +1,17 @@
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.section__header {
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #123456;
+}
+
+.section__paragraph {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}

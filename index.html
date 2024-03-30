@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduł 4 BEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="header__header">Homepage</h1>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#o-mnie">O mnie</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#moje-cele">Moje cele</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#co-zwiedzilem">Co zwiedziłem</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#ustawienia-strony">Ustawienia strony</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="o-mnie" class="section">
+            <h2 class="section__header">O mnie</h2>
+            <p class="section__paragraph">
+                Urodziłem się w 2000 roku. Obecnie studiuję na Wojskowej Akademii Technicznej w Warszawie, na kierunku automatyka i robotyka. Jestem przewodniczącym studenckiego koła naukowego.
+            </p>
+            <p class="section__paragraph">
+                Od 6 miesięcy interesuje się frontendem. W przyszłości chcę pracować jako React/.NET developer.
+            </p>
+            <img class="image js-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Logo React">
+        </section>
+        <section id="moje-cele" class="section">
+            <h2 class="section__header">Moje cele</h2>
+            <ol>
+                <li>nauczyć się React.js
+                    <ul>
+                        <li>najpierw poznać HTML, CSS, JavaScript</li>
+                    </ul>
+                </li>
+                <li>nauczyć się .NET
+                    <ul>
+                        <li>najpierw poznać C#</li>
+                        <li>następnie ASP.NET</li>
+                        <li>na koniec framework Blazor</li>
+                    </ul>
+                </li>
+                <li>ukończyć studia</li>
+            </ol>
+        </section>
+        <section id="co-zwiedzilem" class="section">
+            <h2 class="section__header">Co zwiedziłem?</h2>
+            <table class="table">
+                <caption class="table__caption">Odwiedzone miejsca przeze mnie</caption>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="col">Kraj</th>
+                    <th class="table__cell table__cell--header" scope="col">Miasto</th>
+                    <th class="table__cell table__cell--header" scope="col">Rok odwiedzenia</th>
+                    <th class="table__cell table__cell--header" scope="col">Informacje o miejscu (otwiera się w nowej karcie)</th>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scrope="row">Anglia</th>
+                    <td class="table__cell">Londyn</td>
+                    <td class="table__cell" rowspan="2">2018</td>
+                    <td class="table__cell"><a class="table__link" target="_blank" title="Informacje o Londynie" href="https://pl.wikipedia.org/wiki/Londyn">Londyn - wikipedia</a></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header">Walia</th>
+                    <td class="table__cell">Cardiff</td>
+                    <td class="table__cell"><a class="table__link" target="_blank" title="Informacje o Cardiff" href="https://pl.wikipedia.org/wiki/Cardiff">Cardiff - wikimedia</a></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header">Francja</th>
+                    <td class="table__cell">Paryż</td>
+                    <td class="table__cell">2019</td>
+                    <td class="table__cell"><a class="table__link" target="_blank" title="Informacje o Paryżu" href="ttps://pl.wikipedia.org/wiki/Paryż">Paryż - wikipedia</a></td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header">Niemcy</th>
+                    <td class="table__cell">Berlin</td>
+                    <td class="table__cell">2020</td>
+                    <td class="table__cell"><a class="table__link" target="_blank" title="Informacje o Berlinie" href="ttps://pl.wikipedia.org/wiki/Berlin">Berlin - wikipedia</a></td>
+                </tr>
+            </table>
+        </section>
+        <section id="Ustawienia-strony" class="section">
+            <h2 class="section__header">Ustawienia strony</h2>
+            <button class="js-buttonDeletePhoto">Usuń zdjęcie</button>
+            <button class="js-buttonChangeBackground"><span class="js-buttonChangeBackgroundText">Zmień tło</span></button>
+            <button class="js-buttonGoToTop">Wróć na górę strony</button>
+            <p class="js-sectionText">Podoba Ci się strona?</p>
+            <p class="js-imageLikePage"><img src="https://i.postimg.cc/hPyYszXZ/icon-off.png" alt="Serce puste - niepolubiona strona"></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragraph">Copyright by Kamil</p>
+    </footer>
+</body>
+</html>

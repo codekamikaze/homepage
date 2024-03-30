@@ -1,0 +1,10 @@
+.header {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header__header {
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}

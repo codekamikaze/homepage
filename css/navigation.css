@@ -1,0 +1,20 @@
+.navigation {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f0ffff;
+}
+
+.navigation__list {
+    list-style: none;
+}
+
+.navigation__item {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #8a2be2;
+}

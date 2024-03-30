@@ -1,0 +1,8 @@
+.footer {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer__paragraph {
+    text-align: center;
+}
