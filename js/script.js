@@ -29,11 +29,11 @@ imageLikePageElement.addEventListener("click", () => {
     const sectionTextElement = document.querySelector(".js-sectionText");
     if(imageLikeIsChange == false) {
         sectionTextElement.innerText = "Dziękuję za polubienie strony!";
-        imageLikePageElement.innerHTML = `<img class="imageLikePage" src="https://i.postimg.cc/J44gjczB/icon-on.png" alt="Serce wypełnione - polubiona strona">`;
+        imageLikePageElement.innerHTML = `<img class="imageLikePage" src="images/icon-on.png" alt="Serce wypełnione - polubiona strona">`;
         imageLikeIsChange = true;
     } else {
         sectionTextElement.innerText = "Podoba Ci się strona?";
-        imageLikePageElement.innerHTML = `<img class="imageLikePage" src="https://i.postimg.cc/hPyYszXZ/icon-off.png" alt="Serce puste - niepolubiona strona">`;
+        imageLikePageElement.innerHTML = `<img class="imageLikePage" src="images/icon-off.png" alt="Serce puste - niepolubiona strona">`;
         imageLikeIsChange = false;
     }
 });
